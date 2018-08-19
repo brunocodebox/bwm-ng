@@ -1,0 +1,11 @@
+<!--  On first rendering the rentals might be empty because the data is returned by the rental.service. -->
+<!--  The @ngFor loop will catch this sutuation and will not place the rental-list-item tags.           -->
+<section id="rentalListing">
+  <h1 class="title">Your Home All Around the World</h1>
+  <div class="row">
+    <div class='col-md-3 col-xs-6' *ngFor="let rental of rentals">
+
+      <bwm-rental-list-item [rental]="rental"></bwm-rental-list-item>
+    </div>
+  </div>
+</section>
