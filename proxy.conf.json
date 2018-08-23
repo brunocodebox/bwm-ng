@@ -1,0 +1,8 @@
+{
+  "_comment": "Created in Section 5, Lecture 64",
+
+  "/api": {
+    "target": "http://localhost:3001",
+    "secure": false
+  }
+}
