@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "../../../../node_modules/rxjs/Observable";
-import { Rental } from "./rental.model";
+//import { Rental } from "./rental.model";
 // Added from Section 5, Lecture 63 - Get Rentals from Node Server
 import { HttpClient } from "@angular/common/http";
 
@@ -16,6 +16,6 @@ export class RentalService {
   }
 
   public getRentals(): Observable<any> {
-    return this.http.get("/api/v1/rentals"); // Sends reqwuest to localhost:4200 (default)
+    return this.http.get("/api/v1/rentals"); // Sends request to localhost:4200 (default)
   }
 }
